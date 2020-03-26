@@ -55,7 +55,6 @@ describe("Helpers testing suite", () => {
     expect(
       document.getElementById("test").children[0].childElementCount
     ).toEqual(2);
-    // console.log(testRow);
   });
 
   afterAll(() => {
