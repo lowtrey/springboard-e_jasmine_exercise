@@ -49,6 +49,15 @@ describe("Helpers testing suite", () => {
     );
   });
 
+  it("should remove parent row after calling appendDeleteBtn()", () => {
+    const testRow = document.getElementById("test").children[0];
+    appendDeleteBtn(testRow);
+    expect(
+      document.getElementById("test").children[0].childElementCount
+    ).toEqual(2);
+    // console.log(testRow);
+  });
+
   afterAll(() => {
     // teardown logic
     document.getElementById("test").remove();
